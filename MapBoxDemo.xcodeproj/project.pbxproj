@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		50160BF91D0EE58C00D6B8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50160BF71D0EE58C00D6B8D8 /* LaunchScreen.storyboard */; };
 		50160C031D0EE6B800D6B8D8 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50160C021D0EE6B800D6B8D8 /* Mapbox.framework */; };
 		50160C041D0EE6B800D6B8D8 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50160C021D0EE6B800D6B8D8 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50160C091D0EF5B400D6B8D8 /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50160C081D0EF5B400D6B8D8 /* OfflineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		50160BF81D0EE58C00D6B8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50160BFA1D0EE58D00D6B8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50160C021D0EE6B800D6B8D8 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		50160C081D0EF5B400D6B8D8 /* OfflineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				50160BEE1D0EE58C00D6B8D8 /* AppDelegate.swift */,
 				50160BF01D0EE58C00D6B8D8 /* ViewController.swift */,
+				50160C081D0EF5B400D6B8D8 /* OfflineViewController.swift */,
 				50160BF21D0EE58C00D6B8D8 /* Main.storyboard */,
 				50160BF51D0EE58C00D6B8D8 /* Assets.xcassets */,
 				50160BF71D0EE58C00D6B8D8 /* LaunchScreen.storyboard */,
@@ -120,7 +123,7 @@
 				};
 			};
 			buildConfigurationList = 50160BE61D0EE58C00D6B8D8 /* Build configuration list for PBXProject "MapBoxDemo" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50160C091D0EF5B400D6B8D8 /* OfflineViewController.swift in Sources */,
 				50160BF11D0EE58C00D6B8D8 /* ViewController.swift in Sources */,
 				50160BEF1D0EE58C00D6B8D8 /* AppDelegate.swift in Sources */,
 			);
@@ -271,6 +275,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MapBoxDemo",
@@ -280,6 +286,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongyaocun.idaho.MapBoxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -287,6 +294,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MapBoxDemo",
@@ -296,6 +305,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongyaocun.idaho.MapBoxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -318,6 +328,7 @@
 				50160BFF1D0EE58D00D6B8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

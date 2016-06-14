@@ -15,8 +15,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let point = MGLPointAnnotation()
-        point.coordinate = CLLocationCoordinate2D(latitude: 45.52258,longitude: -122.6732)
+        point.coordinate = CLLocationCoordinate2D(latitude: 43.6036,longitude: -116.208710)
         
         point.title = "Warm Springs"
         point.subtitle = "Idaho, USA"
